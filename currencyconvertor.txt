@@ -1,0 +1,141 @@
+package currency;
+import java.utilDecimalFormat;
+import java.text.DecimalFormat;
+Calss CurrencConvertor
+{
+    double rupee,dollar,euro,yen;
+    Scanner sc = new Scanner(System.in);
+    DecimalFormat f = new DecimalFormat("##,###");
+    public convertInrToEuro()
+    {
+       System.out.println("Enter amount in rupees");
+       rupee = sc.nextFloat();
+       euro = rupee / 80;
+       System.out.println(Euro : "+f.format(euro));
+    }
+    public convertEuroToInr()
+    {
+       Sysgem.out.println("Enter amount in Euro");
+       euro = sc.nextFloat();
+       rupee = euro * 80;
+       Sysgem.out.println("Rupees: "+f.format(rupee));
+    }
+    public convertInrToDollar()
+    {
+       Sysgem.out.println("Enter amount in rupees");
+       rupee = sc.nextFloat();
+       dollar = rupere / 66;
+       Sysgem.out.println("Dollar : "+f.format(dollar));
+    }
+    public convertDollarToInr()
+    {
+       Sysgem.out.println("Enter amount in Dollar");
+       rupee = sc.nextFloat();
+       dollar = rupere * 66;
+       Sysgem.out.println("Dollar : "+f.format(rupee))
+    }
+    public convertInrToYen()
+    {
+       Sysgem.out.println("Enter amount in rupees");
+       rupee = sc.nextFloat();
+       yen = rupere / 0.61;
+       Sysgem.out.println("Yen : "+f.format(yen))
+    }
+    public convertYenToInr()
+    {
+       Sysgem.out.println("Enter amount in Yen");
+       euro = sc.nextFloat();
+       rupee = yen * 0.61;
+       Sysgem.out.println("Rupees : "+f.format(rupee))
+    }
+}
+
+
+
+package distance;
+import java.util.*;'
+import java.text.DecimalFormat;
+Class DistanceConvertor
+{
+    double meter,km,miles;
+    {
+       System.out.println("Enter the meter");
+       meter=sc.nextFloat();
+       km= meter * 0.001;
+       System.out.println("Kilometer:"+f.format(km));
+    }
+    public convertKmToMeter();
+    {
+       System.out.println("Enter the Kilometer");
+       km=sc.nextFloat();
+       meter= meter / 0.001;
+       System.out.println("Meter:"+f.format(meter));
+    }
+    public convertMilesToKm();
+    {
+       System.out.println("Enter the miles");
+       miles=sc.nextFloat();
+       km = miles * 1.6093;
+       System.out.println("Kilometer:"+f.format(km));
+    }
+    public convertKmToMiles();
+    {
+       System.out.println("Enter the Kilometer");
+       km=sc.nextFloat();
+       miles = miles / 1.6093;
+       System.out.println("Miles:"+f.format(miles));
+    }
+}
+
+
+
+
+package time;
+import java.util.*;'
+import java.text.DecimalFormat;
+Class TimeConvertor
+{
+    double hour,minute,second;
+    Scanner sc = new Scanner(System.in);
+    DecimalFormat f = new DecimalFormat("##,###");
+    public convertHourToMinute()
+    {
+       System.out.println("Enter the Hour");
+       hour=sc.nextFloat();
+       minute= hour * 60;
+       System.out.println("Minute:"+f.format(minute));
+    }
+    public convertMinuteToHour();
+    {
+       System.out.println("Enter the Minute");
+       minute=sc.nextFloat();
+       hour = minute / 60;
+       System.out.println("Miles:"+f.format(miles));
+    }
+    public convertHourToSeconds();
+    {
+       System.out.println("Enter the Hour");
+       hour=sc.nextFloat();
+       second = hour * 3600;
+       System.out.println("Seconds:"+f.format(second));
+    }
+    public convertSecondsHourToHour();
+    {
+       System.out.println("Enter the Seconds");
+       second=sc.nextFloat();
+       hour = second / 3600;
+       System.out.println("Seconds:"+f.format(second));
+    }}
+
+
+import currency.*;
+import distance.*;
+import time.*;
+import java.util.Scanner;
+public class Convertor
+{
+    public static void main (String[] args)
+    {
+      int code,currency_code,distance_code,time_code;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter the 
