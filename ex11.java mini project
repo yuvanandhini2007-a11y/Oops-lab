@@ -1,0 +1,64 @@
+
+import java.util.*;
+
+class Inventory<T> {
+    private ArrayList<T> items;
+
+    Inventory() {
+        items = new ArrayList<T>();
+    }
+
+    void addItem(T item) {
+        items.add(item);
+        System.out.println(item + " added successfully");
+    }
+
+    void removeItem(T item) {
+        if (items.remove(item)) {
+            System.out.println(item + " removed successfully");
+        } else {
+            System.out.println(item + " not found");
+        }
+    }
+
+    void displayItems() {
+        System.out.println("\nInventory Items:");
+        for (T item : items) {
+            System.out.println(item);
+        }
+    }
+
+    int getCount() {
+        return items.size();
+    }
+
+    boolean searchItem(T item) {
+        return items.contains(item);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Inventory<String> inventory = new Inventory<>();
+
+        inventory.addItem("Laptop");
+        inventory.addItem("Keyboard");
+        inventory.addItem("Mouse");
+        inventory.addItem("Monitor");
+
+        inventory.displayItems();
+
+        System.out.println("\nTotal Items: "
+                + inventory.getCount());
+
+        System.out.println("Search Laptop: "
+                + inventory.searchItem("Laptop"));
+
+        inventory.removeItem("Mouse");
+
+        inventory.displayItems();
+
+        System.out.println("\nTotal Items: "
+                + inventory.getCount());
+    }
+}
